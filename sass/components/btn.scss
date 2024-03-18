@@ -1,0 +1,26 @@
+.btn {
+  &__browse {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      color: $color-black;
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      background-color: $color-white;
+      padding: 0.5rem 1rem;
+      border: 3px solid $color-black;
+      border-radius: 50%;
+      text-decoration: none;
+      transform: translateX(-50%);
+      transition: all 0.5s;
+    }
+    &:hover,
+    &:active {
+      transform: translateX(-50%) translateY(-0.5rem);
+      color: $color-white;
+      background-color: $color-black;
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.9);
+    }
+  }
+}

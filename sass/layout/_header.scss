@@ -1,0 +1,59 @@
+.header {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 95vh;
+  position: relative;
+  &__bar {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+  &__logo-box {
+    margin: 2rem;
+    padding: 0.5rem;
+    height: 7.5rem;
+    display: flex;
+  }
+  &__logo {
+    height: 7rem;
+    // width: 7rem;
+  }
+  &__nav {
+    list-style: none;
+    display: flex;
+    color: $color-white;
+    margin-right: 1rem;
+    font-family: 'Rubik', sans-serif;
+  }
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  &__nav-link {
+    &:link,
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 0.7rem;
+      border-radius: 4px;
+      transition: all 0.5s;
+    }
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34rem;
+    animation: move-up 1s 1s ease-in-out backwards;
+    backface-visibility: hidden;
+  }
+}
