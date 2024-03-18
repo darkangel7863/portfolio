@@ -8,3 +8,28 @@
     color: $color-secondary;
   }
 }
+.heading-secondary {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: 'Rubik glitch', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-black;
+
+  &:hover {
+    animation: slide-and-reappear 0.5s;
+    animation-timing-function: cubic-bezier(0, 2.6, 1, -0.25);
+  }
+  &--white {
+    color: $color-white;
+  }
+  &--black {
+    color: $color-black;
+  }
+}
+.paragraph {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  color: $color-grey-dark;
+  line-height: 1.8;
+}
