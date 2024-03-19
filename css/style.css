@@ -1,20 +1,20 @@
 .margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .margin-top-big {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .margin-top-medium {
-  margin-top: 4rem; }
+  margin-top: 4rem !important; }
 
 .margin-top-small {
-  margin-top: 2rem; }
+  margin-top: 2rem !important; }
 
 @keyframes move-up {
   0% {
@@ -47,7 +47,8 @@
 
 body {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'rubik', sans-serif; }
 
 .heading-primary {
   font-size: 4.8rem;
@@ -63,8 +64,7 @@ body {
   font-weight: 500;
   font-family: 'Rubik glitch', sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  color: #000; }
+  text-align: center; }
   .heading-secondary:hover {
     animation: slide-and-reappear 0.5s;
     animation-timing-function: cubic-bezier(0, 2.6, 1, -0.25); }
@@ -78,6 +78,14 @@ body {
   font-size: 1.6rem;
   color: #333;
   line-height: 1.8; }
+
+.about__img-box {
+  overflow: hidden;
+  height: 95%;
+  border-radius: 2rem; }
+
+.about__img {
+  width: 100%; }
 
 .btn__browse:link, .btn__browse:visited {
   font-size: 1.6rem;
@@ -99,13 +107,100 @@ body {
   background-color: #000;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.9); }
 
-.about__img-box {
-  overflow: hidden;
-  height: 95%;
-  border-radius: 2rem; }
+.cardset-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 7rem 1fr;
+  justify-items: center; }
+  .cardset-skills__title {
+    grid-column: 1/-1; }
 
-.about__img {
-  width: 100%; }
+.card {
+  width: 27rem;
+  margin-bottom: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out; }
+  .card:hover {
+    transform: translateY(-3rem);
+    box-shadow: 0 3rem 3rem rgba(255, 255, 255, 0.7); }
+  .card__img {
+    width: 100%;
+    border-bottom: 1px solid #777;
+    border-radius: 1rem 1rem 0 0; }
+  .card__title {
+    font-size: 2.8rem;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'rubik', sans-serif;
+    color: #75b9be; }
+  .card__list {
+    list-style: none; }
+  .card__item {
+    color: #000;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    line-height: 1.8;
+    display: flex;
+    align-items: center; }
+  .card__icon {
+    margin-right: 1rem; }
+    .card__icon--html {
+      color: #e54d26; }
+    .card__icon--css {
+      color: #254995; }
+    .card__icon--js {
+      color: #fbdf61; }
+
+.cardset-toolset {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row: 7rem 1fr;
+  justify-items: center;
+  grid-gap: 1.5rem;
+  padding-bottom: 4rem; }
+  .cardset-toolset__title {
+    grid-column: 1/-1; }
+
+.toolset-card {
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #777, #333); }
+  .toolset-card:hover {
+    transform: translateY(-3rem);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.7); }
+  .toolset-card:first-child {
+    margin-left: 1.5rem; }
+  .toolset-card__icon {
+    font-size: 4rem;
+    text-align: center;
+    color: #75b9be;
+    margin-top: 1.5rem; }
+  .toolset-card__title {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+  .toolset-card__list {
+    list-style: none;
+    margin: 2rem;
+    align-self: flex-start; }
+  .toolset-card__item {
+    font-size: 1.2rem;
+    color: #fbdf61;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .toolset-card__item-icon {
+    font-size: 1.2rem;
+    color: #fbdf61; }
 
 .header {
   background-image: url(../img/hero.jpg);
@@ -159,4 +254,9 @@ body {
   position: relative; }
 
 .section-skills {
-  background-color: #000; }
+  background-color: #000;
+  background-size: cover;
+  position: relative; }
+
+.section-toolset {
+  position: relative; }

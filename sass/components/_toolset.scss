@@ -1,0 +1,66 @@
+.cardset-toolset {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row: 7rem 1fr;
+  justify-items: center;
+  grid-gap: 1.5rem;
+  padding-bottom: 4rem;
+  &__title {
+    grid-column: 1/-1;
+  }
+}
+.toolset-card {
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-3rem);
+    box-shadow: 0 3rem 3rem rgba($color-black, 0.7);
+  }
+
+  &:first-child {
+    margin-left: 1.5rem;
+  }
+  background-image: linear-gradient(
+    to bottom right,
+    $color-grey-light,
+    $color-grey-dark
+  );
+  &__icon {
+    font-size: 4rem;
+    text-align: center;
+    color: $color-primary;
+    margin-top: 1.5rem;
+  }
+  &__title {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    // font-family: 'rubik', sans-serif;
+    color: $color-white;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 2rem;
+    align-self: flex-start;
+  }
+  &__item {
+    font-size: 1.2rem;
+    color: $color-js;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__item-icon {
+    font-size: 1.2rem;
+    color: $color-js;
+  }
+}

@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="css/style.css" />
     <title>Mohamed Elsayed Ahmed Portfolio | Front-end development</title>
   </head>
@@ -54,7 +55,7 @@
       </div>
       <div class="text-about">
         <h2
-          class="margin-top-medium heading-secondary heading-secondary--black margin-bottom-medium"
+          class="heading-secondary heading-secondary--black margin-top-medium margin-bottom-medium"
         >
           About me
         </h2>
@@ -86,12 +87,105 @@
       <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
     </section>
     <section class="section-skills">
-      <h2
-        class="margin-top-medium heading-secondary margin-bottom-medium heading-secondary--white"
-      >
-        Skills and Toolsets
-      </h2>
+      <div class="cardset-skills">
+        <div class="margin-top-medium margin-bottom-big cardset-skills__title">
+          <h2 class="heading-secondary heading-secondary--white">
+            Skills and Toolsets
+          </h2>
+        </div>
+
+        <div class="card">
+          <img src="img/html.jpg" alt="HTML" class="card__img" />
+          <h3 class="card__title">Html</h3>
+          <ul class="card__list margin-bottom-medium">
+            <li class="card__item">
+              <ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
+              Semantic HTML</li>
+            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
+              Forms and Validation</li>
+            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
+              Accessibility</li>
+            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
+              SEO Basics</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="img/css.jpg" alt="CSS" class="card__img" />
+          <h3 class="card__title">Css</h3>
+          <ul class="card__list margin-bottom-medium">
+            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
+              Responsive Design</li>
+            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
+              Flexbox</li>
+            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
+              CSS Grid</li>
+            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
+              Floats</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="img/javascript.jpg" alt="Javascript" class="card__img" />
+          <h3 class="card__title">Javascript</h3>
+          <ul class="card__list margin-bottom-medium">
+            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
+              Pure JS</li>
+            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
+              DOM Manipulation</li>
+            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
+              jQuery Library</li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
+      </div>
+    </section>
+    <section class="section-toolset">
+      <div class="cardset-toolset margin-bottom-big">
+        <div class="margin-top-medium margin-bottom-big cardset-toolset__title">
+          <h2 class="heading-secondary heading-secondary--black">
+            Additional tools
+          </h2>
+        </div>
+        <div class="toolset-card">
+          <ion-icon name="sync-outline" class="toolset-card__icon"></ion-icon>
+          <h3 class="toolset-card__title">Version Control</h3>
+          <ul class="toolset-card__list">
+            <li class="toolset-card__item"><ion-icon name="logo-github" class="toolset-card__item-icon"></ion-icon>Git</li>
+            <li class="toolset-card__item"><ion-icon name="logo-github" class="toolset-card__item-icon"></ion-icon>Github</li>
+          </ul>
+        </div>
+        <div class="toolset-card">
+          <ion-icon name="construct-outline" class="toolset-card__icon"></ion-icon>
+          <h3 class="toolset-card__title">Package Manager</h3>
+          <ul class="toolset-card__list">
+            <li class="toolset-card__item"><ion-icon name="logo-npm" class="toolset-card__item-icon"></ion-icon>npm</li>
+          </ul>
+        </div>
+        <div class="toolset-card">
+          <ion-icon name="layers-outline" class="toolset-card__icon"></ion-icon>
+          <h3 class="toolset-card__title">CSS Architecture</h3>
+          <ul class="toolset-card__list">
+            <li class="toolset-card__item"><ion-icon name="hammer-outline" class="toolset-card__item-icon"></ion-icon>BEM</li>
+          </ul>
+        </div>
+        <div class="toolset-card">
+          <ion-icon name="color-palette-outline" class="toolset-card__icon"></ion-icon>
+          <h3 class="toolset-card__title">CSS Preprocessor</h3>
+          <ul class="toolset-card__list">
+            <li class="toolset-card__item"><ion-icon name="logo-sass" class="toolset-card__item-icon"></ion-icon>SASS</li>
+            <li class="toolset-card__item"><ion-icon name="logo-sass" class="toolset-card__item-icon"></ion-icon>SCSS</li>
+          </ul>
+        </div>
+        <div class="toolset-card">
+          <ion-icon name="play-forward-outline" class="toolset-card__icon"></ion-icon>
+          <h3 class="toolset-card__title">Task Runners</h3>
+          <ul class="toolset-card__list">
+            <li class="toolset-card__item"><ion-icon name="logo-npm" class="toolset-card__item-icon"></ion-icon>npm scripts</li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
     </section>
     <footer class="footer"></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
