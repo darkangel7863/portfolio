@@ -9,11 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Mohamed Elsayed Ahmed Portfolio | Front-end development</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__bar">
         <div class="header__logo-box">
@@ -25,19 +34,21 @@
         </div>
         <ul class="header__nav">
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">About me</a>
+            <a href="#about" class="header__nav-link">About me</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Skills set</a>
+            <a href="#skillset" class="header__nav-link">Skills set</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">My Projects</a>
+            <a href="#projects" class="header__nav-link">My Projects</a>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Courses & Scholarships</a>
+            <a href="#courses" class="header__nav-link"
+              >Courses & Scholarships</a
+            >
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Contact me</a>
+            <a href="#contact" class="header__nav-link">Contact me</a>
           </li>
         </ul>
       </div>
@@ -47,9 +58,10 @@
           passion <span class="heading-primary--red">job</span>.
         </h1>
       </div>
-      <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
+      <a href="#about" class="btn btn__browse btn__browse--white">&darr;</a>
     </header>
-    <section class="section-about">
+    <!-- Section About -->
+    <section class="section-about" id="about">
       <div class="about__img-box">
         <img class="about__img" src="img/portfolio_img.jpg" alt="My Picture" />
       </div>
@@ -74,19 +86,16 @@
           striking and user-friendly interfaces that transcend the digital
           landscape.
         </p>
-        <p class="paragraph">
-          Central to my philosophy is the belif in collaboration and in
-          insatiable thirst for knowledge. I eagerly explore emerging
-          technologies and keep abreast of trends in web development.
-        </p>
+
         <p class="paragraph">
           I'm excited to connect with you and discuss how my skills can elavate
           your projects.
         </p>
       </div>
-      <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
+      <a href="#skillset" class="btn btn__browse btn__browse--white">&darr;</a>
     </section>
-    <section class="section-skills">
+    <!-- Sections Skills & toolset-->
+    <section class="section-skills" id="skillset">
       <div class="cardset-skills">
         <div class="margin-top-medium margin-bottom-big cardset-skills__title">
           <h2 class="heading-secondary heading-secondary--white">
@@ -99,46 +108,100 @@
           <h3 class="card__title">Html</h3>
           <ul class="card__list margin-bottom-medium">
             <li class="card__item">
-              <ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
-              Semantic HTML</li>
-            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
-              Forms and Validation</li>
-            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
-              Accessibility</li>
-            <li class="card__item"><ion-icon name="logo-html5" class="card__icon card__icon--html"></ion-icon>
-              SEO Basics</li>
+              <ion-icon
+                name="logo-html5"
+                class="card__icon card__icon--html"
+              ></ion-icon>
+              Semantic HTML
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-html5"
+                class="card__icon card__icon--html"
+              ></ion-icon>
+              Forms and Validation
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-html5"
+                class="card__icon card__icon--html"
+              ></ion-icon>
+              Accessibility
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-html5"
+                class="card__icon card__icon--html"
+              ></ion-icon>
+              SEO Basics
+            </li>
           </ul>
         </div>
         <div class="card">
           <img src="img/css.jpg" alt="CSS" class="card__img" />
           <h3 class="card__title">Css</h3>
           <ul class="card__list margin-bottom-medium">
-            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
-              Responsive Design</li>
-            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
-              Flexbox</li>
-            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
-              CSS Grid</li>
-            <li class="card__item"><ion-icon name="logo-css3" class="card__icon card__icon--css"></ion-icon>
-              Floats</li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-css3"
+                class="card__icon card__icon--css"
+              ></ion-icon>
+              Responsive Design
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-css3"
+                class="card__icon card__icon--css"
+              ></ion-icon>
+              Flexbox
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-css3"
+                class="card__icon card__icon--css"
+              ></ion-icon>
+              CSS Grid
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-css3"
+                class="card__icon card__icon--css"
+              ></ion-icon>
+              Floats
+            </li>
           </ul>
         </div>
         <div class="card">
           <img src="img/javascript.jpg" alt="Javascript" class="card__img" />
           <h3 class="card__title">Javascript</h3>
           <ul class="card__list margin-bottom-medium">
-            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
-              Pure JS</li>
-            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
-              DOM Manipulation</li>
-            <li class="card__item"><ion-icon name="logo-javascript" class="card__icon card__icon--js"></ion-icon>
-              jQuery Library</li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-javascript"
+                class="card__icon card__icon--js"
+              ></ion-icon>
+              Pure JS
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-javascript"
+                class="card__icon card__icon--js"
+              ></ion-icon>
+              DOM Manipulation
+            </li>
+            <li class="card__item">
+              <ion-icon
+                name="logo-javascript"
+                class="card__icon card__icon--js"
+              ></ion-icon>
+              jQuery Library
+            </li>
           </ul>
         </div>
-        <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
+        <a href="#toolset" class="btn btn__browse btn__browse--white">&darr;</a>
       </div>
     </section>
-    <section class="section-toolset">
+    <section class="section-toolset" id="toolset">
       <div class="cardset-toolset margin-bottom-big">
         <div class="margin-top-medium margin-bottom-big cardset-toolset__title">
           <h2 class="heading-secondary heading-secondary--black">
@@ -149,43 +212,440 @@
           <ion-icon name="sync-outline" class="toolset-card__icon"></ion-icon>
           <h3 class="toolset-card__title">Version Control</h3>
           <ul class="toolset-card__list">
-            <li class="toolset-card__item"><ion-icon name="logo-github" class="toolset-card__item-icon"></ion-icon>Git</li>
-            <li class="toolset-card__item"><ion-icon name="logo-github" class="toolset-card__item-icon"></ion-icon>Github</li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-github"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >Git
+            </li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-github"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >Github
+            </li>
           </ul>
         </div>
         <div class="toolset-card">
-          <ion-icon name="construct-outline" class="toolset-card__icon"></ion-icon>
+          <ion-icon
+            name="construct-outline"
+            class="toolset-card__icon"
+          ></ion-icon>
           <h3 class="toolset-card__title">Package Manager</h3>
           <ul class="toolset-card__list">
-            <li class="toolset-card__item"><ion-icon name="logo-npm" class="toolset-card__item-icon"></ion-icon>npm</li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-npm"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >npm
+            </li>
           </ul>
         </div>
         <div class="toolset-card">
           <ion-icon name="layers-outline" class="toolset-card__icon"></ion-icon>
           <h3 class="toolset-card__title">CSS Architecture</h3>
           <ul class="toolset-card__list">
-            <li class="toolset-card__item"><ion-icon name="hammer-outline" class="toolset-card__item-icon"></ion-icon>BEM</li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="hammer-outline"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >BEM
+            </li>
           </ul>
         </div>
         <div class="toolset-card">
-          <ion-icon name="color-palette-outline" class="toolset-card__icon"></ion-icon>
+          <ion-icon
+            name="color-palette-outline"
+            class="toolset-card__icon"
+          ></ion-icon>
           <h3 class="toolset-card__title">CSS Preprocessor</h3>
           <ul class="toolset-card__list">
-            <li class="toolset-card__item"><ion-icon name="logo-sass" class="toolset-card__item-icon"></ion-icon>SASS</li>
-            <li class="toolset-card__item"><ion-icon name="logo-sass" class="toolset-card__item-icon"></ion-icon>SCSS</li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-sass"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >SASS
+            </li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-sass"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >SCSS
+            </li>
           </ul>
         </div>
         <div class="toolset-card">
-          <ion-icon name="play-forward-outline" class="toolset-card__icon"></ion-icon>
+          <ion-icon
+            name="play-forward-outline"
+            class="toolset-card__icon"
+          ></ion-icon>
           <h3 class="toolset-card__title">Task Runners</h3>
           <ul class="toolset-card__list">
-            <li class="toolset-card__item"><ion-icon name="logo-npm" class="toolset-card__item-icon"></ion-icon>npm scripts</li>
+            <li class="toolset-card__item">
+              <ion-icon
+                name="logo-npm"
+                class="toolset-card__item-icon"
+              ></ion-icon
+              >npm scripts
+            </li>
           </ul>
         </div>
-        <a href="#" class="btn btn__browse btn__browse--white">&darr;</a>
+      </div>
+      <a href="#projects" class="btn btn__browse btn__browse--white">&darr;</a>
     </section>
-    <footer class="footer"></footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Section Projects -->
+    <section class="section-projects" id="projects">
+      <div class="margin-top-medium margin-bottom-big">
+        <h2 class="heading-secondary heading-secondary--white">
+          Project samples
+        </h2>
+      </div>
+      <div class="project">
+        <div class="project__imgs margin-bottom-big">
+          <img
+            src="img/Natours_header.JPG"
+            alt="Natours project header"
+            class="project__img--full"
+          />
+          <img
+            src="img/Natours_mobile.JPG"
+            alt="Natours project mobile"
+            class="project__img--mob"
+          />
+        </div>
+        <div class="project__text margin-bottom-big">
+          <h3 class="project__title">Natours Project</h3>
+          <p class="project__desc margin-bottom-medium">
+            Travel & tour booking platform
+          </p>
+          <p class="project__text-paragraph margin-bottom-small">
+            A project designed to be compatible with all screen sizes, ranging
+            from desktop to mobile phones. It comprises various meticulously
+            crafted sections. Constructed using HTML and SASS with BEM notation,
+            the development process leveraged npm as a powerful tool for
+            front-end developers.
+          </p>
+          <ul class="project__tools-list">
+            <li class="project__tools-item">
+              <ion-icon name="logo-html5" class="project__tools-icon"></ion-icon
+              >HTML
+            </li>
+            <li class="project__tools-item">
+              <ion-icon name="logo-sass" class="project__tools-icon"></ion-icon
+              >SASS
+            </li>
+            <li class="project__tools-item">
+              <ion-icon
+                name="hammer-outline"
+                class="project__tools-icon"
+              ></ion-icon
+              >BEM
+            </li>
+            <li class="project__tools-item">
+              <ion-icon
+                name="desktop-outline"
+                class="project__tools-icon"
+              ></ion-icon
+              >Responsive Design
+            </li>
+          </ul>
+          <div class="project__link-text margin-top-big">
+            Project Link:
+            <a
+              href="https://natoursapp7863.netlify.app/"
+              class="project__link"
+              target="_blank"
+              >Natours Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project__imgs margin-bottom-big">
+          <img
+            src="img/Omnifood_header.JPG"
+            alt="Omnifood project header"
+            class="project__img--full"
+          />
+          <img
+            src="img/Omnifood_mobile.JPG"
+            alt="Omnifood project mobile"
+            class="project__img--mob"
+          />
+        </div>
+        <div class="project__text margin-bottom-big">
+          <h3 class="project__title">Omnifood Project</h3>
+          <p class="project__desc margin-bottom-medium">
+            Premium food delivery service
+          </p>
+          <p class="project__text-paragraph margin-bottom-small">
+            A project designed to seamlessly adapt to various screen sizes,
+            spanning from desktops to phones. Comprising meticulously crafted
+            sections, it is constructed using HTML and CSS.
+          </p>
+          <ul class="project__tools-list">
+            <li class="project__tools-item">
+              <ion-icon name="logo-html5" class="project__tools-icon"></ion-icon
+              >HTML
+            </li>
+            <li class="project__tools-item">
+              <ion-icon name="logo-css3" class="project__tools-icon"></ion-icon
+              >CSS
+            </li>
+            <li class="project__tools-item">
+              <ion-icon
+                name="desktop-outline"
+                class="project__tools-icon"
+              ></ion-icon
+              >Responsive Design
+            </li>
+          </ul>
+          <div class="project__link-text margin-top-big">
+            Project Link:
+            <a
+              href="https://omnifood7863.netlify.app/"
+              class="project__link"
+              target="_blank"
+              >Omnifood Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project__imgs margin-bottom-big">
+          <img
+            src="img/Nexter_header.JPG"
+            alt="Nexter project header"
+            class="project__img--full"
+          />
+          <img
+            src="img/Nexter_mobile.JPG"
+            alt="Nexter project mobile"
+            class="project__img--mob"
+          />
+        </div>
+        <div class="project__text margin-bottom-big">
+          <h3 class="project__title">Nexter Project</h3>
+          <p class="project__desc margin-bottom-medium">Real Estate Platform</p>
+          <p class="project__text-paragraph margin-bottom-small">
+            A project tailored to suit diverse screen sizes, seamlessly
+            transitioning from desktop to phone. It features intricately
+            designed sections and is developed with HTML and SASS, leveraging
+            CSS Grid and Flexbox for enhanced layout flexibility.
+          </p>
+          <ul class="project__tools-list">
+            <li class="project__tools-item">
+              <ion-icon name="logo-html5" class="project__tools-icon"></ion-icon
+              >HTML
+            </li>
+            <li class="project__tools-item">
+              <ion-icon name="logo-sass" class="project__tools-icon"></ion-icon
+              >SASS
+            </li>
+            <li class="project__tools-item">
+              <ion-icon
+                name="desktop-outline"
+                class="project__tools-icon"
+              ></ion-icon
+              >Responsive Design
+            </li>
+          </ul>
+          <div class="project__link-text margin-top-big">
+            Project Link:
+            <a
+              href="https://nexter7863.netlify.app/"
+              class="project__link"
+              target="_blank"
+              >Nexter Project</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project__layout">
+        <div class="project-sample">
+          <img
+            src="img/trillo_header.JPG"
+            alt="Trillo project header"
+            class="project-sample__img"
+          />
+          <div class="project-sample__text margin-bottom-big">
+            <h3 class="project-sample__title">Trillo Project</h3>
+
+            <p class="project-sample__text-paragraph margin-bottom-small">
+              A concise webpage project constructed using HTML and SASS,
+              empowered by Flexbox for full flexibility across all screen sizes.
+            </p>
+          </div>
+        </div>
+        <div class="project-sample">
+          <img
+            src="img/Lisbon Chair Shop Header.JPG"
+            alt="Lisbon Chair Shop Header"
+            class="project-sample__img"
+          />
+          <div class="project-sample__text margin-bottom-big">
+            <h3 class="project-sample__title">Lisbon Chair Shop</h3>
+
+            <p class="project-sample__text-paragraph margin-bottom-small">
+              A compact webpage project crafted with the capabilities of HTML
+              and CSS, featuring visually captivating sections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img src="img/gal-1.JPG" alt="Gallery image 1" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="img/gal-2.JPG" alt="Gallery image 2" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="img/gal-3.JPG" alt="Gallery image 3" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="img/gal-4.JPG" alt="Gallery image 4" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="img/gal-5.JPG" alt="Gallery image 5" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="img/gal-6.JPG" alt="Gallery image 6" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img src="img/gal-7.JPG" alt="Gallery image 7" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img src="img/gal-8.JPG" alt="Gallery image 8" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img src="img/gal-9.JPG" alt="Gallery image 9" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+        <img src="img/gal-10.JPG" alt="Gallery image 10" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+        <img src="img/gal-11.JPG" alt="Gallery image 11" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--12">
+        <img src="img/gal-12.JPG" alt="Gallery image 12" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+        <img src="img/gal-13.JPG" alt="Gallery image 13" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+        <img src="img/gal-14.JPG" alt="Gallery image 14" class="gallery__img" />
+      </figure>
+    </section>
+    <section class="section-courses" id="courses">
+      <h2 class="heading-secondary heading-secondary--black margin-top-big">
+        Courses And scholarships
+      </h2>
+      <ul class="courses__list">
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Learn HTML 5 Programming from scratch
+          <span class="courses__issue">Udemy</span>
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Certification of Full Stack Developer Track
+          <span class="courses__issue"
+            >Udacity - 1 Million Arab Codes Initiative</span
+          >
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Certification of Front End Development Track
+          <span class="courses__issue"
+            >Udacity - 1 Million Arab Codes Initiative</span
+          >
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Java Tutorial For Beginners,
+          <span class="courses__issue">Udemy</span>
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Programming Foundations with Javascript,HTML and CSS ,
+          <span class="courses__issue">Coursera - Duke University</span>
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >Certification of Android Development Track
+          <span class="courses__issue"
+            >Udacity - 1 Million Arab Codes Initiative</span
+          >
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >The Web Development Challenger Track
+          <span class="courses__issue">Udacity - Egypt FWD Initiative</span>
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          >The Web Development Professional Nanodegree
+          <span class="courses__issue">Udacity</span>
+        </li>
+        <li class="courses__item">
+          <ion-icon name="checkmark-outline" class="courses__icon"></ion-icon
+          ><span class="courses__issue">SoloLearn</span> Courses for HTML , CSS,
+          Javascript, jQuery,PHP, Python, Ruby Tutorial, SQL
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn__browse btn__browse--white">&darr;</a>
+    </section>
+    <section class="section-contact" id="contact">
+      <h2
+        class="heading-secondary heading-secondary--black margin-top-big margin-bottom-big contact__heading"
+      >
+        Contact me
+      </h2>
+      <div class="contact__info">
+        <p class="Name">Mohamed Elsayed Ahmed</p>
+        <p class="email">
+          Email Address:
+          <a href="mailto:darkangel7863@gmail.com" class="contact__link"
+            >darkangel7863@gmail.com</a
+          >
+        </p>
+        <p class="phone">
+          Phone :
+          <a href="tel:+2-0122-6143-823" class="contact__link"
+            >+2-0122-6143-823</a
+          >
+        </p>
+        <p class="linked">
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/mohamed-el-sayed-669039155/"
+            class="contact__link"
+            >Mohamed El Sayed</a
+          >
+        </p>
+        <p class="github">
+          Github:
+          <a href="https://github.com/darkangel7863" class="contact__link"
+            >My github</a
+          >
+        </p>
+      </div>
+      <div class="contact__img-box"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="copyright">
+        &copy; Copyright <span class="footer__year">2024</span>. Designed and
+        Build by <span class="footer__developer">Mohamed Elsayed Ahmed</span>.
+      </p>
+    </footer>
   </body>
 </html>

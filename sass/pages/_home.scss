@@ -4,6 +4,7 @@
   grid-column-gap: 2rem;
   margin: 4rem 2rem;
   position: relative;
+  height: 95vh;
 }
 .section-skills {
   background-color: $color-black;
@@ -12,4 +13,16 @@
 }
 .section-toolset {
   position: relative;
+}
+.section-projects {
+  display: grid;
+  row-gap: 3rem;
+  background-color: $color-black;
+}
+.section-courses {
+  position: relative;
+}
+.section-contact {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
 }

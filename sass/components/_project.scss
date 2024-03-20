@@ -1,0 +1,94 @@
+.project {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 10rem;
+  font-size: 1.6rem;
+  &__imgs {
+    position: relative;
+  }
+  &__img--full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1rem solid $color-grey-dark;
+    border-radius: 1rem;
+    width: 80%;
+  }
+  &__img--mob {
+    border: 0.5rem solid $color-grey-dark;
+    border-radius: 0.5rem;
+    width: 20%;
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+  }
+  &__text {
+    color: $color-white;
+  }
+  &__title {
+    font-size: 3.2rem;
+  }
+  &__desc {
+    font-size: 2.4rem;
+    color: $color-grey-light;
+  }
+  &__text-paragraph {
+    font-size: 1.8rem;
+  }
+  &__tools-list {
+    list-style: none;
+    display: flex;
+  }
+  &__tools-item {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+  &__tools-icon {
+    color: $color-primary;
+    margin-right: 1rem;
+  }
+  &__link-text {
+    font-size: 2.4rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-primary;
+      display: inline-block;
+      transition: all 0.2s;
+      padding-left: 3rem;
+    }
+    &:hover,
+    &:active {
+      color: darken($color-primary, 20%);
+      box-shadow: 0 1rem 2rem rgba($color-grey-dark, 0.4);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+}
+.project__layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+.project-sample {
+  width: 80%;
+  &__img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    color: $color-white;
+  }
+  &__title {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+  &__text-paragraph {
+    font-size: 1.8rem;
+  }
+}
